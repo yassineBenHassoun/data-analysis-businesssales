@@ -3,17 +3,20 @@ FROM python:3.8
 EXPOSE 8888
 
 RUN pip install \
-  numpy \
-  pandas \
+  numpy \
+  pandas\
   notebook \
-  pymsql \
+  mysql \
   mysqlclient \
-  mysql-connector-python \
+  mysql-connector-python \
+  matplotlib \
+  scipy \
+  seaborn
 
 
-RUN mkdir /lab
+RUN mkdir -p  /lab
 
-WORKDIR  /lab
+WORKDIR /lab
 
 ENTRYPOINT [ "jupyter" ]
 CMD [ "notebook","--allow-root","--ip=0.0.0.0"]

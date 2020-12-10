@@ -9,23 +9,32 @@ Pour ce faire, j'ai récupéré depuis le site de la FAO des données sur tous l
 
 Nous utilison DOCKER pour une ISO
 
-Il faut passer en ligne de commande installer en amont docker puis entrer dans le dossier 
+Il faut passer en ligne de commande installer en amont docker puis entrer dans le dossier
 
 ```bash
-docker-compose up -d 
+docker-compose up -d
 ```
 
-## URL d'entrer 
+## URL d'entrer
 
-```python
+```url
 http://localhost:8888/
 ```
 
 
 ## Mot de passe
 
-```python
+``` pwd
 easy
 ```
 
 
+## Entrer dans le container python afin d'installer des packae
+
+```
+ddocker-compose exec jupyter bash
+
+
+```
+
+## Tout le code source se trouve dans le dossier /lab
